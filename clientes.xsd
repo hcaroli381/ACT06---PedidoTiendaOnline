@@ -1,0 +1,31 @@
+<xs:schema xmlns:xs="http://tienda.com/clientes"> 
+	<xs:element name="cli:cliente">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="cli:nombre" type="xs:string"/>
+				<xs:element name="cli:email" type="xs:string"/>
+				
+				<xs:complexType name="cli:edad" type="xs:integer">
+					<xs:simpleContent>
+						<xs:restriction base="xs:integer">
+						<xs:minInclusive value="18"/>
+						
+						
+						</xs:restriction>
+					
+					</xs:simpleContent>
+				
+				
+				</xs:complexType>
+				
+			
+			</xs:sequence>
+		
+		
+		</xs:complexType>
+	
+	</xs:element>
+
+
+
+</xs:schema>

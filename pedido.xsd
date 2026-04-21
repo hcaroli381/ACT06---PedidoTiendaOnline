@@ -1,0 +1,14 @@
+<xs:schema xmlns:xs="http://tienda.com/pedidos">
+	<xs:element name="pedido">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="http://tienda.com/clientes"/>
+				<xs:element ref="http://tienda.com/productos"/>
+				<xs:element name="observaciones" type="xs:string" minOccurs='0' maxOccurs='1'/>
+				<xs:element name="total"/>
+			</xs:sequence>
+			<xs:attribute name="codigo" type="xs:string" use="required"/>
+			<xs:attribute name="estado" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

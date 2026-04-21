@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido xmlns="http://tienda.com/pedidos"
+        xmlns:cli="http://tienda.com/clientes"
+        xmlns:prod="http://tienda.com/productos"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://tienda.com/pedidos pedido.xsd
+            http://tienda.com/clientes clientes.xsd
+            http://tienda.com/productos productos.xsd"
+        codigo="PED-001"
+        estado="pendiente">
+
+    <cli:cliente>
+        <cli:nombre>Marta López</cli:nombre>
+        <cli:email>marta@correo.com</cli:email>
+        <cli:edad>35</cli:edad>
+        <cli:telefono>612345678</cli:telefono>
+    </cli:cliente>
+
+    <prod:productos>
+        <prod:producto tipo="hardware">
+            <prod:nombre>SSD 1TB</prod:nombre>
+            <prod:cantidad>2</prod:cantidad>
+            <prod:precio moneda="EUR">89.95</prod:precio>
+        </prod:producto>
+        <prod:producto tipo="periferico">
+            <prod:nombre>Teclado mecánico</prod:nombre>
+            <prod:cantidad>1</prod:cantidad>
+            <prod:precio moneda="EUR">59.90</prod:precio>
+        </prod:producto>
+    </prod:productos>
+
+    <observaciones>Entrega por la mañana</observaciones>
+    <total moneda="EUR">239.80</total>
+</pedido>
