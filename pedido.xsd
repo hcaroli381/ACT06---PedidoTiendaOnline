@@ -1,4 +1,5 @@
-<xs:schema xmlns:xs="http://tienda.com/pedidos">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tienda.com/pedidos"
+xmlns:ped="http://tienda.com/pedidos" elementFormDefault="unqualified"> 
 	<xs:element name="pedido">
 		<xs:complexType>
 			<xs:sequence>
